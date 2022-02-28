@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/libs/animation/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 </head>
 <body>
 
@@ -252,22 +252,22 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-4 mb-50 wow fadeInUp">
-					<div class="case-box c-2">
+					<div class="case-box c-7">
 						<div class="case-display">
 							<div class="header-case-box">
 								<div class="box-number">
 									<span class="case-number">04</span>
 								</div>
 								<div class="box-year">
-									<span class="case-year">2020</span>
+									<span class="case-year">2022</span>
 								</div>
 							</div>
 							<div class="body-case-box">
-								<span class="case-name">Shard Studio</span>
+								<span class="case-name">DoNFT</span>
 							</div>
 						</div>
 						<div class="case-hover">
-							<a href="https://www.figma.com/proto/poAzVJv4leeVO9mIwnhodC/Shard-Logo?page-id=0%3A1&node-id=1%3A5&viewport=332%2C48%2C0.1&scaling=contain" target="_blank">View Project</a>
+							<a href="https://www.figma.com/proto/s5WJRBvPMIc7UJCNCFOLcH/DoNFT?page-id=0%3A1&node-id=1%3A6650&viewport=332%2C48%2C0.05&scaling=scale-down-width" target="_blank">View Project</a>
 						</div>
 					</div>
 				</div>
@@ -312,22 +312,22 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-4 wow fadeInUp">
-					<div class="case-box c-7">
+					<div class="case-box c-2">
 						<div class="case-display">
 							<div class="header-case-box">
 								<div class="box-number">
 									<span class="case-number">07</span>
 								</div>
 								<div class="box-year">
-									<span class="case-year">2022</span>
+									<span class="case-year">2020</span>
 								</div>
 							</div>
 							<div class="body-case-box">
-								<span class="case-name">DoNFT</span>
+								<span class="case-name">Shard Studio</span>
 							</div>
 						</div>
 						<div class="case-hover">
-							<a href="https://www.figma.com/proto/s5WJRBvPMIc7UJCNCFOLcH/DoNFT?page-id=0%3A1&node-id=1%3A6650&viewport=332%2C48%2C0.05&scaling=scale-down-width" target="_blank">View Project</a>
+							<a href="https://www.figma.com/proto/poAzVJv4leeVO9mIwnhodC/Shard-Logo?page-id=0%3A1&node-id=1%3A5&viewport=332%2C48%2C0.1&scaling=contain" target="_blank">View Project</a>
 						</div>
 					</div>
 				</div>
@@ -409,10 +409,10 @@
 	</section>
 
 	<section class="mobile">
-		<div class="container full-screen">
+		<div class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-12">
-					<h2>Какой-то текст</h2>
+					<h2>Сайт открываетя только на Desktop разрешениях</h2>
 				</div>
 			</div>
 		</div>
@@ -421,7 +421,15 @@
 	<script src="assets/libs/jquery/jquery-3.5.1.min.js"></script>
 	<script src="assets/libs/gsap/gsap.min.js"></script>
 	<script src="assets/libs/animation/js/wow.min.js"></script>
-	<script src="https://cdn.rawgit.com/sarathsaleem/grained/master/grained.js"></script>
+	<script src="assets/libs/grained/grained.min.js"></script>
+	<script>
+		gsap.to(".marquee-part-1", {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
+		gsap.set(".marquee-inner-1", {xPercent: -50});
+	</script>
+	<script>
+		gsap.to(".marquee-part-2", {xPercent: 100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
+		gsap.set(".marquee-inner-2", {xPercent: -50});
+	</script>
 	<script>
 		var options = {
 		  animate: true,
